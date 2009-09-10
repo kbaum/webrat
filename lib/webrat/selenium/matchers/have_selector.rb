@@ -28,8 +28,8 @@ module Webrat
             false
         end
         
-        def selector
-          "css=#{@expected}" + (@content && ":contains('#{@content}')")
+       def selector
+          "css=#{@expected}" + ((@content && ":contains('#{@content}')") || '')
         end
 
         # ==== Returns
