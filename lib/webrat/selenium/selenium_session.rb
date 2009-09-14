@@ -143,7 +143,7 @@ module Webrat
     end
 
     def wait_for(params={})
-      timeout = params[:timeout] || 5
+      timeout = params[:timeout] || Webrat.configuration.selenium_response_wait_time
       message = params[:message] || "Timeout exceeded"
 
       begin_time = Time.now
