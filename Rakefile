@@ -177,6 +177,7 @@ desc 'Removes trailing whitespace'
 task :whitespace do
   sh %{find . -name '*.rb' -exec sed -i '' 's/ *$//g' {} \\;}
 end
+<<<<<<< HEAD:Rakefile
 
 if defined?(Jeweler)
   task :spec => :check_dependencies
@@ -184,3 +185,5 @@ if defined?(Jeweler)
 end
 
 task :default => :spec
+=======
+>>>>>>> bb71265cc4dad3d6b44c7f0cde844d6c0430b3fa:Rakefile
